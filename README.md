@@ -1,74 +1,16 @@
-<<<<<<< HEAD
-# Cybershield-App
-=======
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> d2e95a2 (Initialize project using Create React App)
+CyberShield
+CyberShield is a full-stack, AI-powered platform for real-time cyberbullying detection and moderation. It proactively scans user-generated content (posts, comments, and private chats) using advanced natural language processing (XML-RoBERTa) for text and Google’s Gemini API for images. Offensive or abusive content is automatically flagged or blocked, with immediate alerts sent to affected users and moderators. A dedicated CyberTool interface allows moderators to review and manually clean any flagged content. CyberShield’s goal is to maintain a safe online community by preventing and responding to harmful interactions.
+Features
+User Authentication (JWT): Secure signup/login with JSON Web Tokens to protect API endpoints and user sessions.
+Post Creation: Users can create new posts with text and optional images (posts can be tagged with a mood).
+Real-Time Moderation: All comments and private chat messages are analyzed on-the-fly. CyberShield blocks or flags cyberbullying before content appears.
+CyberTool Interface: An admin interface for moderators to view and manually clean or delete flagged content.
+Alerts & Notifications: Instant alerts are sent to users and moderators whenever content is flagged for potential cyberbullying.
+MongoDB Persistence: All data (users, posts, comments, chats, flags) is stored in MongoDB for durability and fast access.
+Tech Stack
+React.js: Frontend UI library for building the user interface.
+Tailwind CSS: Utility-first CSS framework for styling and responsive design.
+FastAPI: Python backend framework for building RESTful APIs.
+MongoDB: NoSQL database serving as the persistence layer.
+XML-RoBERTa: Advanced NLP model used for text-based cyberbullying analysis.
+Google Gemini API: Image analysis/generation API used to detect abusive or inappropriate content in images.
